@@ -1,1 +1,1 @@
-# Statistical-Inference-Quizzes
+# Statistical-Inference-Course-Project
