@@ -14,7 +14,7 @@ For this comparison I'll investigate the distribution of averages of 40 exponent
 ## Simulations
 
 For investigation of the Exponential Distribution must obtain a large number of averages of the exponential distributions of 40 observations. For this I'll create a matrix whose rows are the exponential distributions of 40 observations. In total, the matrix will contain thousand lines, in accordance with the number of simulations. The matrix will contain 40 columns in accordance with the number of observations for each distribution.
-Upon receipt of the matrix I find the average of each line, and thus, the distribution of the average values ​​of the exponential distribution.
+After receiving the matrix, I'll calculate the average of each line, and thus, it will be a distribution of the averages of the exponential distributions.
 
 ```{r runexpsimulation}
 set.seed(10)
@@ -24,7 +24,6 @@ lambda <- 0.2
 expsim <- matrix(rexp(nosim*n, rate=lambda), nosim, n)
 averages <- rowMeans(expsim)
 ```
-
 
 ## Sample Mean versus Theoretical Mean
 
@@ -50,7 +49,6 @@ lines(xfit, yfit, pch=22, col="red", lty=2)
 # add legend
 legend('topright', c("simulation", "theoretical"), lty=c(1,2), col=c("black", "red"))
 ```
-
 
 ## Sample Variance versus Theoretical Variance
 
