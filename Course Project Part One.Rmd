@@ -9,7 +9,9 @@ Sagi Greenstine
 
 In a few (2-3) sentences explain what is going to be reported on.
 
-This report is a comparison of the Exponential Distribution, applied in R, with the Central Limit Theorem statements.
+This report is a comparison of the Exponential Distribution, applied in R, with the Central Limit Theorem statements. 
+The Central Limit Theorem claims that the distribution of large number of 
+For this comparison I will investigate the distribution of averages of 40 exponentials, for receiving of large number of averages I'll do a thousand simulations.
 
 
 ## Simulations
@@ -62,4 +64,3 @@ Via figures and text, explain how one can tell the distribution is approximately
 ```{r name}
   
 ```
- 
