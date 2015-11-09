@@ -1,5 +1,20 @@
+
 ## Statistical Inference: Course Project - Part Two
 
-# Investigation of the Exponential Distribution in R and Its Comparing with the Central Limit Theorem
+# The "ToothGrowth"" Dataset Basic Inferential Analysis
 
 Sagi Greenstine
+
+## Overview
+
+This report is a basic inferential analysis of the ToothGrowth data in the R datasets package. Firstly, I'll load the dataset and perform some basic exploratory analyses, it will also be presented a basic summary of the data. After that will be used confidence intervals and hypothesis tests to compare tooth growth by supp and dose. 
+
+
+
+## 1. Load the ToothGrowth data and perform some basic exploratory data analyses
+
+## 2. Provide a basic summary of the data.
+
+## 3. Use confidence intervals and/or hypothesis tests to compare tooth growth by supp and dose. (Only use the techniques from class, even if there's other approaches worth considering)
+
+## 4. State your conclusions and the assumptions needed for your conclusions.
