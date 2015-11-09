@@ -1,1 +1,5 @@
+## Statistical Inference: Course Project - Part Two
 
+# Investigation of the Exponential Distribution in R and Its Comparing with the Central Limit Theorem
+
+Sagi Greenstine
