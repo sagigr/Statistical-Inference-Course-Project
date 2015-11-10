@@ -4,13 +4,13 @@ output: html_document
 
 ## Statistical Inference: Course Project - Part Two
 
-# The "ToothGrowth"" Dataset Basic Inferential Analysis
+# The "ToothGrowth" Dataset Basic Inferential Analysis
 
 Sagi Greenstine
 
 ## Overview
 
-### The "ToothGrowth"" Dataset
+### The "ToothGrowth" Dataset
 
 The ToothGrowth dataset in R this is a set of observations of the effect of vitamin C on tooth growth in guinea pigs.
 
