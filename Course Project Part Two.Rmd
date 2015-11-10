@@ -7,14 +7,48 @@ Sagi Greenstine
 
 ## Overview
 
+### The "ToothGrowth"" Dataset
+
+The ToothGrowth dataset in R this is a set of observations of the effect of vitamin C on tooth growth in guinea pigs.
+
+The response is the length of odontoblasts (cells responsible for tooth growth) in 60 guinea pigs. Each animal received one of three dose levels of vitamin C (0.5, 1, and 2 mg/day) by one of two delivery methods, (orange juice or ascorbic acid (a form of vitamin C and coded as VC).
+
+Source: C. I. Bliss (1952) The Statistics of Bioassay. Academic Press.
+
+### The Course Project Report
+
 This report is a basic inferential analysis of the ToothGrowth data in the R datasets package. Firstly, I'll load the dataset and perform some basic exploratory analyses, it will also be presented a basic summary of the data. After that will be used confidence intervals and hypothesis tests to compare tooth growth by supp and dose. 
 
+## Data Processing
 
+### Loading and preprocessing the data
 
-## 1. Load the ToothGrowth data and perform some basic exploratory data analyses
+Loading the dataset:
 
-## 2. Provide a basic summary of the data.
+```{r loaddata}
+if(!exists("tgdata")){
+  tgdata <- ToothGrowth
+}
+```
 
-## 3. Use confidence intervals and/or hypothesis tests to compare tooth growth by supp and dose. (Only use the techniques from class, even if there's other approaches worth considering)
+The structure of the data:
 
-## 4. State your conclusions and the assumptions needed for your conclusions.
+```{r strdataset}
+str(tgdata)
+```
+
+A data frame with 60 observations on 3 variables:
+
+1. **len**      *numeric*       - Tooth length
+
+2. **supp**     *factor*        - Supplement type (VC or OJ)
+
+3. **dose**	*numeric*       - Dose in milligrams/day
+
+### 1. Load the ToothGrowth data and perform some basic exploratory data analyses
+
+### 2. Provide a basic summary of the data.
+
+### 3. Use confidence intervals and/or hypothesis tests to compare tooth growth by supp and dose. (Only use the techniques from class, even if there's other approaches worth considering)
+
+### 4. State your conclusions and the assumptions needed for your conclusions.
