@@ -1,3 +1,6 @@
+---
+output: html_document
+---
 
 ## Statistical Inference: Course Project - Part Two
 
@@ -26,9 +29,14 @@ This report is a basic inferential analysis of the ToothGrowth data in the R dat
 Loading the dataset:
 
 ```{r loaddata}
+library(datasets)
 if(!exists("tgdata")){
   tgdata <- ToothGrowth
 }
+```
+
+```{r headdata}
+head(tgdata)
 ```
 
 The structure of the data:
@@ -45,9 +53,25 @@ A data frame with 60 observations on 3 variables:
 
 3. **dose**	*numeric*       - Dose in milligrams/day
 
-### 1. Load the ToothGrowth data and perform some basic exploratory data analyses
+### The summary of the data
 
-### 2. Provide a basic summary of the data.
+```{r summarydata}
+summary(tgdata)
+```
+
+```{r dataplot, echo=FALSE}
+library(ggplot2)
+ggplot(data=ToothGrowth, aes(x=as.factor(dose), y=len)) +
+    geom_bar(stat="identity") +
+    facet_grid(. ~ supp) +
+    xlab("Dose(mg/day)") +
+    ylab("Tooth Length") +
+    ggtitle("ToothGrowth Data")        
+```
+
+### 1. Load the ToothGrowth data and perform some basic exploratory data analyses V
+
+### 2. Provide a basic summary of the data. V
 
 ### 3. Use confidence intervals and/or hypothesis tests to compare tooth growth by supp and dose. (Only use the techniques from class, even if there's other approaches worth considering)
 
