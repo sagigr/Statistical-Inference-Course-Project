@@ -24,7 +24,7 @@ This report is a basic inferential analysis of the ToothGrowth data in the R dat
 
 ## Data Processing
 
-### Loading and preprocessing the data
+### Loading and viewing the data
 
 Loading the dataset:
 
@@ -59,6 +59,10 @@ A data frame with 60 observations on 3 variables:
 summary(tgdata)
 ```
 
+### Exploratory data analysis diagram
+
+The ToothGrowth dataset plot (the dependence of tooth length on the dose of vitamin C for each supplement type):
+
 ```{r dataplot, echo=FALSE}
 library(ggplot2)
 ggplot(data=ToothGrowth, aes(x=as.factor(dose), y=len)) +
@@ -69,10 +73,15 @@ ggplot(data=ToothGrowth, aes(x=as.factor(dose), y=len)) +
     ggtitle("ToothGrowth Data")        
 ```
 
-### 1. Load the ToothGrowth data and perform some basic exploratory data analyses V
+Obviously, there is a clear positive correlation between the tooth lenght and the dose of vitamin C for two supplement types.
 
-### 2. Provide a basic summary of the data. V
+## Data Analysis
 
-### 3. Use confidence intervals and/or hypothesis tests to compare tooth growth by supp and dose. (Only use the techniques from class, even if there's other approaches worth considering)
+### Regression analysis
+
+### confidence intervals
+
+### hypothesis tests
+
 
 ### 4. State your conclusions and the assumptions needed for your conclusions.
