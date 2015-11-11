@@ -85,7 +85,7 @@ Obviously, there is a clear positive correlation between the tooth lenght and th
 t.test(len ~ supp, paired=F, var.equal=F, data=tgdata)
 ```
 
-change it: A confidence interval of [-0.171, 7.571] does not allow us to reject the null hypothesis (that there is no correlation between delivery method and tooth length).
+The confidence interval doesn't let to reject the null hypothesis of no correlation between the supplement type and the tooth length.
 
 2. Analysis of the data for correlation between the dose and the tooth length:
 
@@ -98,8 +98,7 @@ t.test(len ~ dose, paired=F, var.equal=F, data=dose2)
 t.test(len ~ dose, paired=F, var.equal=F, data=dose3)
 ```
 
-change it: The confidence intervals ([-11.98, -6.276] for doses 0.5 and 1.0, [-18.16, -12.83] for doses 0.5 and 2.0, and [-8.996, -3.734] for doses 1.0 and 2.0) allow for the rejection of the null hypothesis and a confirmation that there is a significant correlation between tooth length and dose levels.
-
+The confidence intervals allow to reject the null hypothesis and confirm that there is a significant correlation between the dose and the tooth length.
 
 3. Analysis of the data for correlation between the supplement type and tooth length for each dosage level:
 
@@ -112,7 +111,8 @@ t.test(len ~ supp, paired=F, var.equal=F, data=dose1.0)
 t.test(len ~ supp, paired=F, var.equal=F, data=dose2.0)
 ```
 
-change it: The confidence intervals for dose levels 0.5mg and 1.0mg([1.72, 8,78] within 0.5mg, [2.80, 9.06] within 1.0mg) allow for the rejection of the null hypothesis and a confirmation that there is a significant correlation between tooth length and dose levels. However, the confidence interval for dose level 2.0[-3.80, 3.64] is not enough to reject the null hypothesis.
+The confidence intervals for dosage levels of 0.5 and 1.0 mg/day allow to reject the null hypothesis and a confirm that there is a significant correlation between the supplement type and tooth length for these dosage levels.
 
+However, the confidence interval for dosage level of 2.0 mg/day doesn't allow to reject the null hypothesis.
 
-### 4. State your conclusions and the assumptions needed for your conclusions.
+## Conclusions
