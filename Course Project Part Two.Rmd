@@ -115,4 +115,16 @@ The confidence intervals for dosage levels of 0.5 and 1.0 mg/day allow to reject
 
 However, the confidence interval for dosage level of 2.0 mg/day doesn't allow to reject the null hypothesis.
 
-## Conclusions
+## The conclusions and the assumptions
+
+Here are some conclusions based on the above data analysis:
+
+1. There is no correlation between the supplement type and the tooth length (cannot reject the null hypothesis).
+2. There is a significant correlation between the dose and the tooth length (the null hypotesis is rejected).
+3. There is a significant correlation between the supplement type and tooth length for 0.5 and 1.0 mg/day dosage levels (the null hypothesis is rejected). However, for 2.0 mg/day dosage level there is no correlation between the supplement type and tooth length (cannot reject the null hypothesis).
+
+The assumptions for these conclusions:
+
+1. The given sample of guinea pigs is a repesentative for all the population of guinea pigs.
+2. The dosage levels and the supplement types are randomly assigned.
+3. The distribution of the values is normal.
