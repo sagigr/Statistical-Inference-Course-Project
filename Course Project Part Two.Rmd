@@ -1,5 +1,5 @@
 ---
-output: html_document
+output: pdf_document
 ---
 
 ## Statistical Inference: Course Project - Part Two
@@ -51,7 +51,7 @@ A data frame with 60 observations on 3 variables:
 
 2. **supp**     *factor*        - Supplement type (VC or OJ)
 
-3. **dose**	*numeric*       - Dose in milligrams/day
+3. **dose**	    *numeric*       - Dose in milligrams/day
 
 ### The summary of the data
 
@@ -111,7 +111,7 @@ t.test(len ~ supp, paired=F, var.equal=F, data=dose1.0)
 t.test(len ~ supp, paired=F, var.equal=F, data=dose2.0)
 ```
 
-The confidence intervals for dosage levels of 0.5 and 1.0 mg/day allow to reject the null hypothesis and a confirm that there is a significant correlation between the supplement type and tooth length for these dosage levels.
+The confidence intervals for dosage levels of 0.5 and 1.0 mg/day allow to reject the null hypothesis and confirm that there is a significant correlation between the supplement type and tooth length for these dosage levels.
 
 However, the confidence interval for dosage level of 2.0 mg/day doesn't allow to reject the null hypothesis.
 
@@ -121,10 +121,10 @@ Here are some conclusions based on the above data analysis:
 
 1. There is no correlation between the supplement type and the tooth length (cannot reject the null hypothesis).
 2. There is a significant correlation between the dose and the tooth length (the null hypotesis is rejected).
-3. There is a significant correlation between the supplement type and tooth length for 0.5 and 1.0 mg/day dosage levels (the null hypothesis is rejected). However, for 2.0 mg/day dosage level there is no correlation between the supplement type and tooth length (cannot reject the null hypothesis).
+3. There is a significant correlation between the supplement type and tooth length for 0.5 and 1.0 mg/day dosage levels (the null hypothesis is rejected).    However, for 2.0 mg/day dosage level there is no correlation between the supplement type and tooth length (cannot reject the null hypothesis).
 
 The assumptions for these conclusions:
 
-1. The given sample of guinea pigs is a repesentative for all the population of guinea pigs.
+1. The given sample of guinea pigs is a representative for all the population of guinea pigs.
 2. The dosage levels and the supplement types are randomly assigned.
 3. The distribution of the values is normal.
